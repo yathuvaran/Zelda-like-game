@@ -3100,7 +3100,7 @@ GameObject:
   - component: {fileID: 596606319}
   m_Layer: 0
   m_Name: log
-  m_TagString: Untagged
+  m_TagString: enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3295,6 +3295,7 @@ GameObject:
   - component: {fileID: 893788387}
   - component: {fileID: 893788388}
   - component: {fileID: 893788389}
+  - component: {fileID: 893788390}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -3451,6 +3452,20 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &893788390
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 893788383}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca421dda8593a854fb893b7688d51b12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  thrust: 5
+  knockTime: 0.4
 --- !u!1001 &1021133302
 PrefabInstance:
   m_ObjectHideFlags: 0
