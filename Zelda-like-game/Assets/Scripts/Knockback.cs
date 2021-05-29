@@ -14,7 +14,6 @@ public class Knockback : MonoBehaviour
             Rigidbody2D enemy = other.GetComponent<Rigidbody2D>(); //declare a ridgid body 
             if(enemy != null) //check if enemy has a ridgid body
             {
-                enemy.isKinematic = false;
                 Vector2 difference = enemy.transform.position - transform.position;
                 //normalize to turn into vector that has length of 1
                 difference =  difference.normalized * thrust;
@@ -30,7 +29,6 @@ public class Knockback : MonoBehaviour
         {
             yield return new WaitForSeconds(knockTime);
             enemy.velocity = Vector2.zero;
-            enemy.isKinematic = true;
         }
     }
 }
