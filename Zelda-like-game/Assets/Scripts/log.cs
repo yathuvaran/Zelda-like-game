@@ -13,6 +13,7 @@ public class log : Enemy
     // Start is called before the first frame update
     void Start()
     {
+        currentState = EnemyState.idle;
         myRigidbody = GetComponent<Rigidbody2D>();
         //transform holds scale, rotation and position
         //thats all we need to know to find out where the object needs to move towards
@@ -20,7 +21,7 @@ public class log : Enemy
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         CheckDistance();
     }
@@ -30,9 +31,23 @@ public class log : Enemy
         if(Vector3.Distance(target.position, transform.position) <= chaseRadius 
             && Vector3.Distance(target.position, transform.position) > attackRadius)
         {
-            //moveSpeed * Time.deltaTime so that it averages out to moveSpeed per Second
-            Vector3 temp = Vector3.MoveTowards(transform.position, target.position, moveSpeed * Time.deltaTime);
-            myRigidbody.MovePosition(temp);
+            //so that we don't move towards player in attack or stagger states
+            if (currentState == EnemyState.idle || currentState == EnemyState.walk
+                && currentState != EnemyState.stagger)
+            {
+                //moveSpeed * Time.deltaTime so that it averages out to moveSpeed per Second
+                Vector3 temp = Vector3.MoveTowards(transform.position, target.position, moveSpeed * Time.deltaTime);
+                myRigidbody.MovePosition(temp);
+                ChangeState(EnemyState.walk);
+            }
+        }
+    }
+
+    private void ChangeState(EnemyState newState)
+    {
+        if (currentState != newState)
+        {
+            currentState = newState;
         }
     }
 }
