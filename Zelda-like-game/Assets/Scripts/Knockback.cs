@@ -9,28 +9,30 @@ public class Knockback : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.CompareTag("enemy"))
+        if (other.gameObject.CompareTag("breakable") && this.gameObject.CompareTag("Player"))
         {
-            Rigidbody2D enemy = other.GetComponent<Rigidbody2D>(); //declare a ridgid body 
-            if(enemy != null) //check if enemy has a ridgid body
-            {
-                enemy.GetComponent<Enemy>().currentState = EnemyState.stagger; //when enemy knocked put in stagger state
-                Vector2 difference = enemy.transform.position - transform.position;
-                //normalize to turn into vector that has length of 1
-                difference =  difference.normalized * thrust;
-                enemy.AddForce(difference, ForceMode2D.Impulse);
-                StartCoroutine(KnockCo(enemy));
-            }
+            other.GetComponent<pot>().Smash();
         }
-    }
-
-    private IEnumerator KnockCo(Rigidbody2D enemy)
-    {
-        if (enemy != null)
+        if (other.gameObject.CompareTag("enemy") || other.gameObject.CompareTag("Player"))
         {
-            yield return new WaitForSeconds(knockTime);
-            enemy.velocity = Vector2.zero;
-            enemy.GetComponent<Enemy>().currentState = EnemyState.idle; //after some time reset enemy state to idle
+            Rigidbody2D hit = other.GetComponent<Rigidbody2D>(); //declare a ridgid body 
+            if(hit != null) //check if enemy has a ridgid body
+            {
+                Vector2 difference = hit.transform.position - transform.position;
+                //normalize to turn into vector that has length of 1
+                difference = difference.normalized * thrust;
+                hit.AddForce(difference, ForceMode2D.Impulse);
+                if (other.gameObject.CompareTag("enemy"))
+                {
+                    hit.GetComponent<Enemy>().currentState = EnemyState.stagger; //when enemy knocked put in stagger state
+                    other.GetComponent<Enemy>().Knock(hit, knockTime);
+                }
+                if (other.gameObject.CompareTag("Player"))
+                {
+                    hit.GetComponent<PlayerMovement>().currentState = PlayerState.stagger;
+                    other.GetComponent<PlayerMovement>().Knock(knockTime);
+                }
+            }
         }
     }
 }
