@@ -3382,7 +3382,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thrust: 4
   knockTime: 0.2
-  damage: 0
+  damage: 1
 --- !u!1 &797377674 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -9175964760282384304, guid: 0d9f159b13034cc458fe4f4e7b5ad16e,
@@ -3731,7 +3731,18 @@ MonoBehaviour:
   signal: {fileID: 11400000, guid: da2b1c35b3b55c643af023f97dafd73f, type: 2}
   signalEvent:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1631973396}
+        m_MethodName: UpdateHearts
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1086564145
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4355,6 +4366,8 @@ MonoBehaviour:
   emptyHeart: {fileID: -9053378900703536071, guid: b2266383f7f046f4a8d26ec45290d6d5,
     type: 3}
   heartContainers: {fileID: 11400000, guid: 6d3f067c4b370a2468cf39c0a35aeaed, type: 2}
+  playerCurrentHealth: {fileID: 11400000, guid: ee7ddd72e7722d342805476c33d44b4a,
+    type: 2}
 --- !u!1 &1755599835
 GameObject:
   m_ObjectHideFlags: 0
