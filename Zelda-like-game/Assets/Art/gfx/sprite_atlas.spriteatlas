@@ -40,11 +40,14 @@ SpriteAtlas:
       allowAlphaSplitting: 0
       enableRotation: 1
       enableTightPacking: 1
+    secondaryTextureSettings: {}
     variantMultiplier: 1
     packables:
     - {fileID: 102900000, guid: 4f19a438d00c86e47942eb6e4f507237, type: 3}
     totalSpriteSurfaceArea: 970268
     bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
   - {fileID: -1986772863260763996, guid: b2266383f7f046f4a8d26ec45290d6d5, type: 3}
@@ -2724,5 +2727,6 @@ SpriteAtlas:
   - font
   - Inner
   - cave
+  m_RenderDataMap: {}
   m_Tag: sprite_atlas
   m_IsVariant: 0
