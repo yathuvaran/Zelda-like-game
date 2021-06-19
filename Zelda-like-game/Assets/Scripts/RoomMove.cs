@@ -27,7 +27,7 @@ public class RoomMove : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Player")) //Check if player is in the trigger zone
+        if (other.CompareTag("Player") && !other.isTrigger) //Check if player is in the trigger zone
         {
             //access camera and change its offset
             cam.minPosition += cameraChange;
