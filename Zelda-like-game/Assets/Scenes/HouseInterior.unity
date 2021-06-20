@@ -5332,6 +5332,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7396967708087997011, guid: 0738bfd80a8766148aad6e496e28e375,
         type: 3}
+      propertyPath: fadeWait
+      value: 0.33
+      objectReference: {fileID: 0}
+    - target: {fileID: 7396967708087997011, guid: 0738bfd80a8766148aad6e496e28e375,
+        type: 3}
+      propertyPath: fadeInPanel
+      value: 
+      objectReference: {fileID: 2358301175285535824, guid: a8a6e8708bc749645b31f36c4ef94848,
+        type: 3}
+    - target: {fileID: 7396967708087997011, guid: 0738bfd80a8766148aad6e496e28e375,
+        type: 3}
+      propertyPath: fadeOutPanel
+      value: 
+      objectReference: {fileID: 4324811315336383984, guid: 0a8c66b98d2b5bd4f876a63372746be6,
+        type: 3}
+    - target: {fileID: 7396967708087997011, guid: 0738bfd80a8766148aad6e496e28e375,
+        type: 3}
       propertyPath: playerStorage
       value: 
       objectReference: {fileID: 11400000, guid: 7b0e1047e7a34ef4eabcb76eed69f575,

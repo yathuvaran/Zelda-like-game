@@ -12975,36 +12975,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1641207940}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1135293309
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1135293310}
-  m_Layer: 0
-  m_Name: GameObject
-  m_TagString: Untagged
-  m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1135293310
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1135293309}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -20, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 9
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1173759013
 GameObject:
   m_ObjectHideFlags: 0
@@ -13631,9 +13601,26 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7396967708087997011, guid: 0738bfd80a8766148aad6e496e28e375,
         type: 3}
+      propertyPath: fadeWait
+      value: 0.33
+      objectReference: {fileID: 0}
+    - target: {fileID: 7396967708087997011, guid: 0738bfd80a8766148aad6e496e28e375,
+        type: 3}
+      propertyPath: fadeInPanel
+      value: 
+      objectReference: {fileID: 2358301175285535824, guid: a8a6e8708bc749645b31f36c4ef94848,
+        type: 3}
+    - target: {fileID: 7396967708087997011, guid: 0738bfd80a8766148aad6e496e28e375,
+        type: 3}
       propertyPath: sceneToLoad
       value: HouseInterior
       objectReference: {fileID: 0}
+    - target: {fileID: 7396967708087997011, guid: 0738bfd80a8766148aad6e496e28e375,
+        type: 3}
+      propertyPath: fadeOutPanel
+      value: 
+      objectReference: {fileID: 4324811315336383984, guid: 0a8c66b98d2b5bd4f876a63372746be6,
+        type: 3}
     - target: {fileID: 7396967708087997011, guid: 0738bfd80a8766148aad6e496e28e375,
         type: 3}
       propertyPath: playerStorage
@@ -13888,7 +13875,7 @@ Transform:
   - {fileID: 1232095820}
   - {fileID: 801297956}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1830397926 stripped
 GameObject:
