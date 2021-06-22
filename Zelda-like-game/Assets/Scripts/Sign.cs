@@ -5,21 +5,17 @@ using UnityEngine.UI;
 
 public class Sign : MonoBehaviour
 {
+    public SignalSender contextOn;
+    public SignalSender contextOff;
     public GameObject dialogBox; //reference to dialog box itself
     public Text dialogText; //reference the text
     public string dialog; //reference the string to show up in place of dialog
     public bool playerInRange; //boolean to determine if dialog box should be active
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Space) && playerInRange)
+        if(Input.GetKeyDown(KeyCode.X) && playerInRange)
         {
             if(dialogBox.activeInHierarchy)
             {
@@ -37,6 +33,7 @@ public class Sign : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
+            contextOn.Raise();
             playerInRange = true;
         }
     }
@@ -45,6 +42,7 @@ public class Sign : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
+            contextOff.Raise();
             playerInRange = false;
             dialogBox.SetActive(false);
         }
