@@ -73,6 +73,7 @@
     <Compile Include="Assets\Scripts\Player Scripts\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\Player Scripts\ContextClue.cs" />
     <Compile Include="Assets\Scripts\Objects\Interactable.cs" />
+    <Compile Include="Assets\Scripts\Objects\TreasureChest.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
