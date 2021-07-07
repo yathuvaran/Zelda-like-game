@@ -65,15 +65,17 @@
     <Compile Include="Assets\Scripts\Player Scripts\HeartManager.cs" />
     <Compile Include="Assets\Scripts\Objects\SceneTransition.cs" />
     <Compile Include="Assets\Scripts\Objects\Sign.cs" />
+    <Compile Include="Assets\Scripts\Objects\Interactable.cs" />
     <Compile Include="Assets\Scripts\log.cs" />
+    <Compile Include="Assets\Scripts\Objects\TreasureChest.cs" />
     <Compile Include="Assets\Scripts\Objects\RoomMove.cs" />
     <Compile Include="Assets\Scripts\Game Stuff\Knockback.cs" />
     <Compile Include="Assets\Scripts\ScriptableObjects\SignalSender.cs" />
     <Compile Include="Assets\Scripts\Enemy.cs" />
     <Compile Include="Assets\Scripts\Player Scripts\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\Player Scripts\ContextClue.cs" />
-    <Compile Include="Assets\Scripts\Objects\Interactable.cs" />
-    <Compile Include="Assets\Scripts\Objects\TreasureChest.cs" />
+    <Compile Include="Assets\Scripts\ScriptableObjects\Item.cs" />
+    <Compile Include="Assets\Scripts\ScriptableObjects\Inventory.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
