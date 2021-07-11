@@ -58723,6 +58723,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 7196952188805322921, guid: 67e450eb8c7f021479c55bf443a82a7a,
+        type: 3}
+      propertyPath: m_SleepingMode
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7196952188805322922, guid: 67e450eb8c7f021479c55bf443a82a7a,
         type: 3}
       propertyPath: m_RootOrder
