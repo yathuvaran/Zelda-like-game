@@ -111,7 +111,7 @@ public class PlayerMovement : MonoBehaviour {
             // Get player position and add change (1) multiply it by speed (4)
             // and multiply by how much time has past since previous frame (small amount)
             // Therefore, we move a small amount each frame
-           transform.position + change * speed * Time.deltaTime
+           transform.position + change * speed * Time.fixedDeltaTime
             );
     }
 
