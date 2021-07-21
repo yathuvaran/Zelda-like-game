@@ -44,7 +44,7 @@ SpriteAtlas:
     variantMultiplier: 1
     packables:
     - {fileID: 102900000, guid: 4f19a438d00c86e47942eb6e4f507237, type: 3}
-    totalSpriteSurfaceArea: 555841
+    totalSpriteSurfaceArea: 556097
     bindAsDefault: 1
     isAtlasV2: 0
     cachedData: {fileID: 0}
@@ -1361,6 +1361,7 @@ SpriteAtlas:
   - {fileID: -8041784067552993899, guid: 7168f5655746c194880ed0d573324ae4, type: 3}
   - {fileID: 1532286108747742640, guid: 7168f5655746c194880ed0d573324ae4, type: 3}
   - {fileID: 147799070741053269, guid: 7168f5655746c194880ed0d573324ae4, type: 3}
+  - {fileID: 21300000, guid: bd14beb585739224abc75f8077997f74, type: 3}
   - {fileID: 21300000, guid: df7af639c96551b4f8eaccb46ff88f69, type: 3}
   - {fileID: 3059174765694063163, guid: f6028c59d876d11478bcc233577541e9, type: 3}
   - {fileID: -34017176892466219, guid: f6028c59d876d11478bcc233577541e9, type: 3}
@@ -3079,6 +3080,7 @@ SpriteAtlas:
   - modified gfx melee sprites_1
   - modified gfx melee sprites_2
   - modified gfx melee sprites_3
+  - door
   - NPC_test
   - log_8
   - log_9

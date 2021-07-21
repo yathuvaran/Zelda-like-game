@@ -12897,7 +12897,7 @@ Transform:
   - {fileID: 2023960379}
   - {fileID: 120536328}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1211879372 stripped
 Transform:
@@ -13157,7 +13157,7 @@ PrefabInstance:
     - target: {fileID: 246032831569851270, guid: 0738bfd80a8766148aad6e496e28e375,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 246032831569851270, guid: 0738bfd80a8766148aad6e496e28e375,
         type: 3}
@@ -13216,8 +13216,41 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7396967708087997011, guid: 0738bfd80a8766148aad6e496e28e375,
         type: 3}
+      propertyPath: fadeWait
+      value: 0.33
+      objectReference: {fileID: 0}
+    - target: {fileID: 7396967708087997011, guid: 0738bfd80a8766148aad6e496e28e375,
+        type: 3}
+      propertyPath: fadeInPanel
+      value: 
+      objectReference: {fileID: 2358301175285535824, guid: a8a6e8708bc749645b31f36c4ef94848,
+        type: 3}
+    - target: {fileID: 7396967708087997011, guid: 0738bfd80a8766148aad6e496e28e375,
+        type: 3}
       propertyPath: sceneToLoad
       value: Dungeon
+      objectReference: {fileID: 0}
+    - target: {fileID: 7396967708087997011, guid: 0738bfd80a8766148aad6e496e28e375,
+        type: 3}
+      propertyPath: fadeOutPanel
+      value: 
+      objectReference: {fileID: 4324811315336383984, guid: 0a8c66b98d2b5bd4f876a63372746be6,
+        type: 3}
+    - target: {fileID: 7396967708087997011, guid: 0738bfd80a8766148aad6e496e28e375,
+        type: 3}
+      propertyPath: playerStorage
+      value: 
+      objectReference: {fileID: 11400000, guid: 7b0e1047e7a34ef4eabcb76eed69f575,
+        type: 2}
+    - target: {fileID: 7396967708087997011, guid: 0738bfd80a8766148aad6e496e28e375,
+        type: 3}
+      propertyPath: playerPosition.x
+      value: 7.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7396967708087997011, guid: 0738bfd80a8766148aad6e496e28e375,
+        type: 3}
+      propertyPath: playerPosition.y
+      value: -11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0738bfd80a8766148aad6e496e28e375, type: 3}
@@ -58544,7 +58577,7 @@ PrefabInstance:
     - target: {fileID: 7196952188805322922, guid: 67e450eb8c7f021479c55bf443a82a7a,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7196952188805322922, guid: 67e450eb8c7f021479c55bf443a82a7a,
         type: 3}
